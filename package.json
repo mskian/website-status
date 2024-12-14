@@ -1,0 +1,25 @@
+{
+  "name": "website-status",
+  "description": "CLI to check website HTTP status and send notifications to ntfy.",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./dist/status.js",
+  "scripts": {
+    "dev": "ts-node src/status.ts",
+    "build": "tsc",
+    "start": "node dist/status.js"
+  },
+  "bin": {
+    "website": "bin/index.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
