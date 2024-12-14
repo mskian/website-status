@@ -16,21 +16,33 @@ pnpm install
 **Example**  
 
 ```env
-NTFY=ntfy.sh
+NTFY_BASE_URL=https://ntfy.sh
 ```
 
-- Test a CLI
+- you can also include the ENV Variable like this
+
+```sh
+NTFY_BASE_URL=https://ntfy.sh pnpm dev -u "https://example.com" -t "status"
+```
+
+- Test CLI
 
 **Example**  
 
 ```sh
-pnpm dev -u "https://example.com" -t https://ntfy.sh/status
+pnpm dev -u "https://example.com" -t "status"
 ```
 
-- build a CLI
+- build CLI
 
 ```sh
+
+## Build CLI
 pnpm build
+
+## Test the Production CLI
+pnpm start -u "https://example.com" -t "status"
+
 ```
 
 - Link and run the CLI Locally
@@ -44,7 +56,7 @@ pnpm link --global
 **Example**  
 
 ```sh
-website -u "https://example.com" -t https://ntfy.sh/status
+website -u "https://example.com" -t "status"
 ```
 
 - unlink CLI
