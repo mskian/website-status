@@ -1,4 +1,6 @@
-# Website Status
+# Website Status  
+
+![build-test](https://github.com/mskian/website-status/workflows/build-test/badge.svg)  
 
 CLI to check website HTTP status and send notifications to Self-hosted ntfy push server.  
 
